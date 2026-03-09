@@ -5,7 +5,7 @@ import cv2
 app = Flask(__name__)
 
 # Load YOLO model
-model = YOLO("`best.pt")
+model = YOLO("best.pt")
 
 
 @app.route("/detect", methods=["POST"])
